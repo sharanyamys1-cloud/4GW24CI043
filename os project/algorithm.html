@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Producer–Consumer Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>Producer–Consumer Algorithm</h1>
+    <h2 class="subtitle">Simple Step-by-Step Process</h2>
+
+    <p class="intro">
+        This page explains the algorithm used in the Producer–Consumer simulation.
+    </p>
+
+    <ol class="about-text">
+        <li>Initialize a shared buffer with a fixed size (example: 5 slots).</li>
+
+        <li>
+            <b>Producer Process</b>
+            <ul>
+                <li>Check if the buffer is full.</li>
+                <li>If the buffer is full, display a message and stop producing.</li>
+                <li>If the buffer is not full, add an item to the buffer.</li>
+            </ul>
+        </li>
+
+        <li>
+            <b>Consumer Process</b>
+            <ul>
+                <li>Check if the buffer is empty.</li>
+                <li>If the buffer is empty, display a message and wait.</li>
+                <li>If the buffer is not empty, remove an item from the buffer.</li>
+            </ul>
+        </li>
+
+        <li>Update the buffer display after every operation.</li>
+        <li>Repeat the process until the user stops the simulation.</li>
+    </ol>
+
+    <div class="controls">
+        <a href="home.html"><button class="nav-btn">Home</button></a>
+        <a href="producer.html"><button class="produce">Producer</button></a>
+        <a href="consumer.html"><button class="consume">Consumer</button></a>
+        <a href="c_implementation.html" class="c-btn">C Implementation</a>
+
+
+</div>
+</div>
+
+</body>
+</html>

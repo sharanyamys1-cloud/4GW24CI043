@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C Implementation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div style="text-align:center;">
+
+  <a href="home.html">
+    <button style="
+      padding:12px 28px;
+      font-size:18px;
+      border-radius:10px;
+      background:#8A2BE2;
+      color:white;
+      border:none;
+      cursor:pointer;">
+      Home
+    </button>
+  </a>
+
+  <a href="simulation.html">
+    <button style="
+      padding:12px 28px;
+      font-size:18px;
+      border-radius:10px;
+      background:#1E90FF;
+      color:white;
+      border:none;
+      cursor:pointer;
+      margin-left:10px;">
+      Simulation
+    </button>
+  </a>
+
+</div>
+
+       
+    </div>
+
+    <h1>C Implementation of Producer–Consumer</h1>
+
+    <p>
+        The following C program implements the Producer–Consumer problem 
+        using a simple simulation approach.
+    </p>
+
+    <pre class="code-box">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+#define SIZE 5
+
+int buffer[SIZE];
+int count = 0;
+
+void produce() {
+    if (count == SIZE) {
+        printf("Buffer is FULL\n");
+    } else {
+        buffer[count++] = 1;
+        printf("Item produced\n");
+    }
+}
+
+void consume() {
+    if (count == 0) {
+        printf("Buffer is EMPTY\n");
+    } else {
+        count--;
+        printf("Item consumed\n");
+    }
+}
+
+int main() {
+    int choice;
+    while (1) {
+        printf("1. Produce 2. Consume 3. Exit\n");
+        scanf("%d", &choice);
+        if (choice == 1) produce();
+        else if (choice == 2) consume();
+        else break;
+    }
+}
+    </pre>
+
+</div>
+
+</body>
+</html>

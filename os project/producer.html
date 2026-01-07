@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Producer Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>Producer Page</h1>
+    <h2 class="subtitle">Produce Items into the Shared Buffer</h2>
+
+    <!-- Produce button -->
+    <div class="controls">
+        <button class="produce" onclick="produce()">Produce Item</button>
+    </div>
+
+    <!-- Buffer visualization -->
+    <div class="buffer" id="buffer"></div>
+
+    <!-- Message for buffer state -->
+    <p id="message">Buffer is empty</p>
+
+    <!-- Navigation buttons -->
+    <div class="controls">
+        <a href="home.html"><button class="nav-btn">Home</button></a>
+        <a href="consumer.html"><button class="nav-btn">Go to Consumer</button></a>
+        <a href="c_implementation.html" class="c-btn">C Implementation</a>
+
+
+    </div>
+    
+</div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
